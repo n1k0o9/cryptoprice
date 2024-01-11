@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text.css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href ="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body >
+<span class="tos"></span>
+<div class="wrapper">
+
+    <form action="i.php" id="form-data" method="post" novalidate>
+<h1>Sing up</h1>
+<div class="input-box">
+    <input type="text" placeholder="user name" required id="user" name="userName">
+    <i class="bx bxs-user"></i>
+</div>
+
+<div class="input-box">
+    <input type="text" placeholder="e-mail" required id="e-mail" name="email">
+    <i class="material-icons icons1" >email</i>
+</div>
+
+<div class="input-box">
+    <input type="password" placeholder="pasword" required id="pass" name="pass">
+    
+    <i class="bx bxs-show" id="show" onclick="hide()"></i>
+    <i class="bx bxs-hide" id="hide" onclick="show()"></i>
+</div>
+
+<div class="input-box">
+    <input type="password" placeholder="repeat pasword" required id="passr" name="passr">
+    
+    <i class="bx bxs-show" id="show2" onclick="hide2()"></i>
+    <i class="bx bxs-hide" id="hide2" onclick="show2()"></i>
+</div>
+
+<div class="pr">
+    <label><input type="checkbox" name="check"><a href="">privacy policy</a></label>
+</div>
+<button class="btn" type="submit">login</button>
+<div class="regester-link">
+    <p>you have an accont <a href="../login/login.html">login</a></p>
+
+</div>
+    </form>
+    
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
