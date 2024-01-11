@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text.css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Document</title>
+</head>
+<body >
+<span class="tos"></span>
+<div class="wrapper">
+
+    <form action="i.php" id="form-data" method="post" novalidate>
+<h1>login</h1>
+<div class="input-box">
+    <input type="text" placeholder="user name" required id="user" name="userName">
+    <i class="bx bxs-user"></i>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</div>
+
+<div class="input-box">
+    <input type="password" placeholder="pasword" required id="pass" name="pass">
+    
+    <i class="bx bxs-show" id="show" onclick="hide()" name="show"></i>
+    <i class="bx bxs-hide" id="hide" onclick="show()" name="hide"></i>
+</div>
+<div class="remmber"><label><input type="checkbox">remmber me</label>
+<a href="">forget pasword</a></div>
+<button class="btn" type="submit" onclick="showt()">login</button>
+<div class="regester-link">
+    <p>dont have an accont <a href="../sing up/index.html">regester</a></p>
+    
+</div>
+    </form>
+</div>
+    <script src="java.js"></script>
+</body>
+</html>
